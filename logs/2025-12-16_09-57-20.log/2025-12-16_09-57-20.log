@@ -1,0 +1,2 @@
+[2025-12-16 09:57:21,925] 13 root - INFO - Initiate the data ingestion
+[2025-12-16 09:57:21,928] 32 root - INFO - Fetching data from database: NetworkSecurityData, collection: NetworkData

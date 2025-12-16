@@ -1,0 +1,8 @@
+[2025-12-16 10:42:14,052] 13 root - INFO - Initiate the data ingestion
+[2025-12-16 10:42:14,391] 32 root - INFO - Fetching data from database: NetworkSecurityData, collection: PhishingData
+[2025-12-16 10:42:21,289] 34 root - INFO - Number of records fetched: 20000
+[2025-12-16 10:42:22,583] 64 root - INFO - Successfully split the data into train and test set
+[2025-12-16 10:42:22,583] 65 root - INFO - exited the split_data_as_train_test method of DataIngestion class
+[2025-12-16 10:42:22,583] 69 root - INFO - Created the directory for train and test file path
+[2025-12-16 10:42:23,303] 75 root - INFO - Train file saved successfully: Artifacts/data_ingestion/ingested/train.csv
+[2025-12-16 10:42:23,483] 79 root - INFO - Successfully saved train and test file

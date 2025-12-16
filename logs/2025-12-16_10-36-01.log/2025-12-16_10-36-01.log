@@ -1,0 +1,6 @@
+[2025-12-16 10:36:04,090] 13 root - INFO - Initiate the data ingestion
+[2025-12-16 10:36:04,391] 32 root - INFO - Fetching data from database: NetworkSecurityData, collection: PhishingData
+[2025-12-16 10:36:43,127] 34 root - INFO - Number of records fetched: 20000
+[2025-12-16 10:36:44,966] 64 root - INFO - Successfully split the data into train and test set
+[2025-12-16 10:36:44,966] 65 root - INFO - exited the split_data_as_train_test method of DataIngestion class
+[2025-12-16 10:36:44,967] 69 root - INFO - Created the directory for train and test file path

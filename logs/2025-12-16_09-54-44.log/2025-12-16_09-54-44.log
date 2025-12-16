@@ -1,0 +1,4 @@
+[2025-12-16 09:54:47,165] 13 root - INFO - Initiate the data ingestion
+[2025-12-16 09:54:47,168] 48 root - INFO - Fetching data from database: NetworkSecurityData, collection: NetworkData
+[2025-12-16 09:54:47,171] 50 root - INFO - Number of records fetched: 0
+[2025-12-16 09:54:47,176] 54 root - WARNING - The DataFrame is empty. No data found in the collection.
