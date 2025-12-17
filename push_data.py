@@ -51,7 +51,7 @@ class NetworkDataExtract():
             raise NetworkSecurityException(e,sys)
             
 if __name__=="__main__":
-    FILE_PATH="/home/rguktrkvalley/AIML_Projects/ML_PROJECTS/NETWORKSECURITY/Network_Data/Phishing_Legitimate_full.csv"
+    FILE_PATH="/home/rguktrkvalley/AIML_Projects/ML_PROJECTS/NETWORKSECURITY/Network_Data/phisingData.csv"
     DATABASE="NetworkSecurityData"
     Collection="PhishingData"
     networkobj=NetworkDataExtract()
