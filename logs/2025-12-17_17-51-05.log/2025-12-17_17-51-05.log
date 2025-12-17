@@ -1,0 +1,21 @@
+[2025-12-17 17:51:07,219] 14 root - INFO - Initiate the data ingestion
+[2025-12-17 17:51:07,670] 32 root - INFO - Fetching data from database: NetworkSecurityData, collection: PhishingData
+[2025-12-17 17:51:28,471] 34 root - INFO - Number of records fetched: 11055
+[2025-12-17 17:51:28,745] 64 root - INFO - Successfully split the data into train and test set
+[2025-12-17 17:51:28,745] 65 root - INFO - exited the split_data_as_train_test method of DataIngestion class
+[2025-12-17 17:51:28,746] 69 root - INFO - Created the directory for train and test file path
+[2025-12-17 17:51:28,842] 75 root - INFO - Train file saved successfully: Artifacts/data_ingestion/ingested/train.csv
+[2025-12-17 17:51:28,867] 79 root - INFO - Successfully saved train and test file
+[2025-12-17 17:51:28,867] 89 root - INFO - called the dataingestion artifact
+[2025-12-17 17:51:28,867] 95 root - INFO - Data ingestion completed successfully
+[2025-12-17 17:51:28,868] 17 root - INFO - Data ingestion is completed
+[2025-12-17 17:51:28,877] 20 root - INFO - Initiate the data validation
+[2025-12-17 17:51:28,878] 70 root - INFO - DAta validation has been started
+[2025-12-17 17:51:28,885] 74 root - INFO - Reading training and test data for validation
+[2025-12-17 17:51:28,918] 78 root - INFO - Validating number of columns in training data
+[2025-12-17 17:51:28,918] 34 root - INFO - Required number of columns: 2
+[2025-12-17 17:51:28,918] 35 root - INFO - Dataframe has columns: 31
+[2025-12-17 17:51:28,918] 34 root - INFO - Required number of columns: 2
+[2025-12-17 17:51:28,918] 35 root - INFO - Dataframe has columns: 31
+[2025-12-17 17:51:28,918] 87 root - INFO - Number of columns are validated successfully
+[2025-12-17 17:51:28,918] 88 root - INFO - Checking Data Drift
