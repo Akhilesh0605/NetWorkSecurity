@@ -1,0 +1,33 @@
+[2025-12-18 10:27:13,043] 15 root - INFO - Initiate the data ingestion
+[2025-12-18 10:27:13,623] 32 root - INFO - Fetching data from database: NetworkSecurityData, collection: PhishingData
+[2025-12-18 10:27:17,042] 34 root - INFO - Number of records fetched: 11055
+[2025-12-18 10:27:17,303] 64 root - INFO - Successfully split the data into train and test set
+[2025-12-18 10:27:17,304] 65 root - INFO - exited the split_data_as_train_test method of DataIngestion class
+[2025-12-18 10:27:17,304] 69 root - INFO - Created the directory for train and test file path
+[2025-12-18 10:27:17,401] 75 root - INFO - Train file saved successfully: Artifacts/data_ingestion/ingested/train.csv
+[2025-12-18 10:27:17,423] 79 root - INFO - Successfully saved train and test file
+[2025-12-18 10:27:17,423] 89 root - INFO - called the dataingestion artifact
+[2025-12-18 10:27:17,423] 95 root - INFO - Data ingestion completed successfully
+[2025-12-18 10:27:17,424] 17 root - INFO - Data ingestion is completed
+[2025-12-18 10:27:17,430] 20 root - INFO - Initiate the data validation
+[2025-12-18 10:27:17,430] 66 root - INFO - Data validation has been started
+[2025-12-18 10:27:17,430] 70 root - INFO - Reading training and test data for validation
+[2025-12-18 10:27:17,454] 74 root - INFO - Validating number of columns in training data
+[2025-12-18 10:27:17,454] 31 root - INFO - Required number of columns: 31
+[2025-12-18 10:27:17,454] 32 root - INFO - Dataframe has columns: 31
+[2025-12-18 10:27:17,454] 31 root - INFO - Required number of columns: 31
+[2025-12-18 10:27:17,454] 32 root - INFO - Dataframe has columns: 31
+[2025-12-18 10:27:17,454] 84 root - INFO - Number of columns are validated successfully
+[2025-12-18 10:27:17,454] 85 root - INFO - Checking Data Drift
+[2025-12-18 10:27:17,736] 107 root - INFO - Data validation completed successfully
+[2025-12-18 10:27:17,736] 22 root - INFO - Data validation is completed
+[2025-12-18 10:27:17,736] 24 root - INFO - Data Transformation is started
+[2025-12-18 10:27:17,736] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-12-18 10:27:17,736] 65 root - INFO - Starting data transformation
+[2025-12-18 10:27:17,764] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-12-18 10:27:17,765] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-12-18 10:27:17,780] 38 root - INFO - Entered the save_object method of MAinutils class
+[2025-12-18 10:27:17,786] 42 root - INFO - Exited the save_object method of Mainutis class
+[2025-12-18 10:27:17,786] 38 root - INFO - Entered the save_object method of MAinutils class
+[2025-12-18 10:27:17,790] 42 root - INFO - Exited the save_object method of Mainutis class
+[2025-12-18 10:27:17,791] 27 root - INFO - Data Transformation is completed

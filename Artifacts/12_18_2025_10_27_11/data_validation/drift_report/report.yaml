@@ -1,0 +1,93 @@
+Abnormal_URL:
+  drift_status: false
+  p_value: 0.5970291509297161
+DNSRecord:
+  drift_status: false
+  p_value: 0.40441172880036186
+Domain_registeration_length:
+  drift_status: false
+  p_value: 0.6129588906774134
+Favicon:
+  drift_status: false
+  p_value: 1.0
+Google_Index:
+  drift_status: false
+  p_value: 0.35927327177063706
+HTTPS_token:
+  drift_status: false
+  p_value: 0.35927327177063706
+Iframe:
+  drift_status: false
+  p_value: 1.0
+Links_in_tags:
+  drift_status: false
+  p_value: 0.9786058095826133
+Links_pointing_to_page:
+  drift_status: true
+  p_value: 0.012675018992211377
+Page_Rank:
+  drift_status: false
+  p_value: 0.9999998996954222
+Prefix_Suffix:
+  drift_status: false
+  p_value: 1.0
+Redirect:
+  drift_status: false
+  p_value: 0.9993864328065777
+Request_URL:
+  drift_status: false
+  p_value: 0.6449841622347342
+Result:
+  drift_status: false
+  p_value: 0.9999510909578456
+RightClick:
+  drift_status: false
+  p_value: 1.0
+SFH:
+  drift_status: false
+  p_value: 0.4247552144062567
+SSLfinal_State:
+  drift_status: false
+  p_value: 0.8493635963755504
+Shortining_Service:
+  drift_status: false
+  p_value: 0.5576347492972092
+Statistical_report:
+  drift_status: false
+  p_value: 0.9999998099738984
+Submitting_to_email:
+  drift_status: false
+  p_value: 0.9998299425911609
+URL_Length:
+  drift_status: false
+  p_value: 0.999999999999956
+URL_of_Anchor:
+  drift_status: false
+  p_value: 0.7403682827041975
+age_of_domain:
+  drift_status: false
+  p_value: 0.9999836499887566
+double_slash_redirecting:
+  drift_status: false
+  p_value: 0.15928407899284197
+having_At_Symbol:
+  drift_status: false
+  p_value: 0.999999999999956
+having_IP_Address:
+  drift_status: true
+  p_value: 0.036510871870330384
+having_Sub_Domain:
+  drift_status: false
+  p_value: 0.9999999991050752
+on_mouseover:
+  drift_status: false
+  p_value: 0.9999999999598222
+popUpWidnow:
+  drift_status: false
+  p_value: 1.0
+port:
+  drift_status: false
+  p_value: 1.0
+web_traffic:
+  drift_status: false
+  p_value: 0.9998299425911609
