@@ -1,0 +1,47 @@
+[2025-12-19 22:55:13,813] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-19 22:55:13,822] 107 dagshub - INFO - Accessing as akhileshkovelakuntla
+[2025-12-19 22:55:15,862] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/akhileshkovelakuntla/NetWorkSecurity "HTTP/1.1 200 OK"
+[2025-12-19 22:55:17,705] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-19 22:55:17,708] 107 dagshub - INFO - Initialized MLflow to track repo "akhileshkovelakuntla/NetWorkSecurity"
+[2025-12-19 22:55:17,709] 107 dagshub - INFO - Repository akhileshkovelakuntla/NetWorkSecurity initialized!
+[2025-12-19 22:55:17,713] 26 root - INFO - Initiate the data ingestion
+[2025-12-19 22:55:18,369] 32 root - INFO - Fetching data from database: NetworkSecurityData, collection: PhishingData
+[2025-12-19 22:55:45,530] 34 root - INFO - Number of records fetched: 11055
+[2025-12-19 22:55:45,775] 64 root - INFO - Successfully split the data into train and test set
+[2025-12-19 22:55:45,775] 65 root - INFO - exited the split_data_as_train_test method of DataIngestion class
+[2025-12-19 22:55:45,775] 69 root - INFO - Created the directory for train and test file path
+[2025-12-19 22:55:45,846] 75 root - INFO - Train file saved successfully: Artifacts/data_ingestion/ingested/train.csv
+[2025-12-19 22:55:45,865] 79 root - INFO - Successfully saved train and test file
+[2025-12-19 22:55:45,865] 89 root - INFO - called the dataingestion artifact
+[2025-12-19 22:55:45,866] 95 root - INFO - Data ingestion completed successfully
+[2025-12-19 22:55:45,866] 28 root - INFO - Data ingestion is completed
+[2025-12-19 22:55:45,873] 31 root - INFO - Initiate the data validation
+[2025-12-19 22:55:45,873] 66 root - INFO - Data validation has been started
+[2025-12-19 22:55:45,873] 70 root - INFO - Reading training and test data for validation
+[2025-12-19 22:55:45,896] 74 root - INFO - Validating number of columns in training data
+[2025-12-19 22:55:45,896] 31 root - INFO - Required number of columns: 31
+[2025-12-19 22:55:45,896] 32 root - INFO - Dataframe has columns: 31
+[2025-12-19 22:55:45,897] 31 root - INFO - Required number of columns: 31
+[2025-12-19 22:55:45,897] 32 root - INFO - Dataframe has columns: 31
+[2025-12-19 22:55:45,897] 84 root - INFO - Number of columns are validated successfully
+[2025-12-19 22:55:45,897] 85 root - INFO - Checking Data Drift
+[2025-12-19 22:55:46,088] 107 root - INFO - Data validation completed successfully
+[2025-12-19 22:55:46,088] 33 root - INFO - Data validation is completed
+[2025-12-19 22:55:46,088] 35 root - INFO - Data Transformation is started
+[2025-12-19 22:55:46,088] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-12-19 22:55:46,088] 65 root - INFO - Starting data transformation
+[2025-12-19 22:55:46,115] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-12-19 22:55:46,115] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-12-19 22:55:46,132] 40 root - INFO - Entered the save_object method of MAinutils class
+[2025-12-19 22:55:46,137] 44 root - INFO - Exited the save_object method of Mainutis class
+[2025-12-19 22:55:46,137] 40 root - INFO - Entered the save_object method of MAinutils class
+[2025-12-19 22:55:46,142] 44 root - INFO - Exited the save_object method of Mainutis class
+[2025-12-19 22:55:46,142] 38 root - INFO - Data Transformation is completed
+[2025-12-19 22:55:46,142] 39 root - INFO - Model Training Started
+[2025-12-19 23:03:42,647] 50 root - INFO - Entered the load object method of mainutils class
+[2025-12-19 23:03:42,650] 40 root - INFO - Entered the save_object method of MAinutils class
+[2025-12-19 23:03:42,668] 44 root - INFO - Exited the save_object method of Mainutis class
+[2025-12-19 23:03:42,668] 40 root - INFO - Entered the save_object method of MAinutils class
+[2025-12-19 23:03:42,725] 44 root - INFO - Exited the save_object method of Mainutis class
+[2025-12-19 23:03:42,726] 144 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts/12_19_2025_22_55_05/model_trainer/trained_model/model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9919494548048507, precision_score=0.9908387622149837, recall_score=0.9930626402774944), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9726299087663626, precision_score=0.9691699604743083, recall_score=0.9761146496815286))
+[2025-12-19 23:03:42,728] 43 root - INFO - model traing is completed

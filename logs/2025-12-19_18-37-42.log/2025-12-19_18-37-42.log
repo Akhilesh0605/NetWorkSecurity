@@ -1,0 +1,42 @@
+[2025-12-19 18:38:18,408] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+[2025-12-19 18:38:20,066] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+[2025-12-19 18:38:21,312] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-19 18:38:21,315] 107 dagshub - INFO - Accessing as akhileshkovelakuntla
+[2025-12-19 18:38:22,889] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/akhileshkovelakuntla/NetWorkSecurity "HTTP/1.1 200 OK"
+[2025-12-19 18:38:24,529] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-19 18:38:24,539] 107 dagshub - INFO - Initialized MLflow to track repo "akhileshkovelakuntla/NetWorkSecurity"
+[2025-12-19 18:38:24,540] 107 dagshub - INFO - Repository akhileshkovelakuntla/NetWorkSecurity initialized!
+[2025-12-19 18:38:24,595] 26 root - INFO - Initiate the data ingestion
+[2025-12-19 18:38:25,688] 32 root - INFO - Fetching data from database: NetworkSecurityData, collection: PhishingData
+[2025-12-19 18:39:02,471] 34 root - INFO - Number of records fetched: 11055
+[2025-12-19 18:39:03,018] 64 root - INFO - Successfully split the data into train and test set
+[2025-12-19 18:39:03,019] 65 root - INFO - exited the split_data_as_train_test method of DataIngestion class
+[2025-12-19 18:39:03,019] 69 root - INFO - Created the directory for train and test file path
+[2025-12-19 18:39:03,131] 75 root - INFO - Train file saved successfully: Artifacts/data_ingestion/ingested/train.csv
+[2025-12-19 18:39:03,166] 79 root - INFO - Successfully saved train and test file
+[2025-12-19 18:39:03,166] 89 root - INFO - called the dataingestion artifact
+[2025-12-19 18:39:03,167] 95 root - INFO - Data ingestion completed successfully
+[2025-12-19 18:39:03,167] 28 root - INFO - Data ingestion is completed
+[2025-12-19 18:39:03,248] 31 root - INFO - Initiate the data validation
+[2025-12-19 18:39:03,248] 66 root - INFO - Data validation has been started
+[2025-12-19 18:39:03,249] 70 root - INFO - Reading training and test data for validation
+[2025-12-19 18:39:03,295] 74 root - INFO - Validating number of columns in training data
+[2025-12-19 18:39:03,296] 31 root - INFO - Required number of columns: 31
+[2025-12-19 18:39:03,296] 32 root - INFO - Dataframe has columns: 31
+[2025-12-19 18:39:03,296] 31 root - INFO - Required number of columns: 31
+[2025-12-19 18:39:03,296] 32 root - INFO - Dataframe has columns: 31
+[2025-12-19 18:39:03,296] 84 root - INFO - Number of columns are validated successfully
+[2025-12-19 18:39:03,296] 85 root - INFO - Checking Data Drift
+[2025-12-19 18:39:03,673] 107 root - INFO - Data validation completed successfully
+[2025-12-19 18:39:03,673] 33 root - INFO - Data validation is completed
+[2025-12-19 18:39:03,674] 35 root - INFO - Data Transformation is started
+[2025-12-19 18:39:03,674] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-12-19 18:39:03,674] 65 root - INFO - Starting data transformation
+[2025-12-19 18:39:03,718] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-12-19 18:39:03,719] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-12-19 18:39:03,746] 40 root - INFO - Entered the save_object method of MAinutils class
+[2025-12-19 18:39:03,753] 44 root - INFO - Exited the save_object method of Mainutis class
+[2025-12-19 18:39:03,754] 40 root - INFO - Entered the save_object method of MAinutils class
+[2025-12-19 18:39:03,762] 44 root - INFO - Exited the save_object method of Mainutis class
+[2025-12-19 18:39:03,763] 38 root - INFO - Data Transformation is completed
+[2025-12-19 18:39:03,763] 39 root - INFO - Model Training Started
