@@ -1,0 +1,20 @@
+[2025-12-21 11:13:21,185] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-21 11:13:21,195] 107 dagshub - INFO - Accessing as akhileshkovelakuntla
+[2025-12-21 11:13:22,924] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/akhileshkovelakuntla/NetWorkSecurity "HTTP/1.1 200 OK"
+[2025-12-21 11:13:24,345] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-21 11:13:24,349] 107 dagshub - INFO - Initialized MLflow to track repo "akhileshkovelakuntla/NetWorkSecurity"
+[2025-12-21 11:13:24,350] 107 dagshub - INFO - Repository akhileshkovelakuntla/NetWorkSecurity initialized!
+[2025-12-21 11:14:07,083] 38 root - INFO - Starting data ingestion
+[2025-12-21 11:14:13,355] 32 root - INFO - Fetching data from database: NetworkSecurityData, collection: PhishingData
+[2025-12-21 11:14:18,638] 34 root - INFO - Number of records fetched: 11055
+[2025-12-21 11:14:18,980] 64 root - INFO - Successfully split the data into train and test set
+[2025-12-21 11:14:18,981] 65 root - INFO - exited the split_data_as_train_test method of DataIngestion class
+[2025-12-21 11:14:18,981] 69 root - INFO - Created the directory for train and test file path
+[2025-12-21 11:14:19,149] 75 root - INFO - Train file saved successfully: Artifacts/data_ingestion/ingested/train.csv
+[2025-12-21 11:14:19,196] 79 root - INFO - Successfully saved train and test file
+[2025-12-21 11:14:19,196] 89 root - INFO - called the dataingestion artifact
+[2025-12-21 11:14:19,197] 95 root - INFO - Data ingestion completed successfully
+[2025-12-21 11:14:19,197] 41 root - INFO - Data ingestion completed and artifact: DataIngestionArtifact(feature_store_file_path='Artifacts/data_ingestion/feature_store/pihsingData.csv', train_file_path='Artifacts/data_ingestion/ingested/train.csv', test_file_path='Artifacts/data_ingestion/ingested/test.csv')
+[2025-12-21 11:14:19,198] 49 root - INFO - Starting data validation
+[2025-12-21 11:15:11,656] 50 root - INFO - Entered the load object method of mainutils class
+[2025-12-21 11:15:11,738] 50 root - INFO - Entered the load object method of mainutils class

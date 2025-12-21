@@ -48,7 +48,7 @@ class TrainingPipeline:
             self.data_validation_config=DataValidationConfig(self.training_pipeline_config)
             logging.info("Starting data validation")
             
-            data_validation=DataValidation(self.data_validation_config,data_ingestion_artifact)
+            data_validation=DataValidation(data_ingestion_artifact,self.data_validation_config)
             data_validation_artifact=data_validation.initiate_data_validation()
             logging.info(f"Data validation completed and artifact: {data_validation_artifact}")
             return data_validation_artifact
