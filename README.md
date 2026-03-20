@@ -63,6 +63,11 @@ final_model/model.pkl + preprocessor.pkl
 | Logistic Regression | ✅ |
 | AdaBoost | ✅ |
 
+### Training Data
+- 11,850 real phishing URLs × 35 features (phisingData.csv)
+- 100,000 synthetic phishing features (augmented)
+- Total: ~112,000 samples
+
 ### Metrics (MLflow Tracked)
 | Metric | Score |
 |--------|-------|
@@ -115,9 +120,10 @@ Built from scratch in `feature_extracter.py`. Features include:
 ```
 ML Pipeline   →  scikit-learn (5 models), NetworkModel (preprocessor + model wrapper)
 Experiment    →  MLflow (f1, precision, recall tracked per run)
-Data          →  MongoDB Atlas (training data), 100K synthetic + real phishing dataset
+Data  →  MongoDB Atlas, 11,850 real phishing URLs + 100K synthetic samples
 Backend       →  Flask (single-page app — session-based, no async required)
 Deployment    →  Render (render.yaml config)
+
 ```
 
 > Flask was chosen intentionally over FastAPI — this is a single-page synchronous app with no streaming or concurrent I/O. Flask is the simpler, more appropriate tool here.
